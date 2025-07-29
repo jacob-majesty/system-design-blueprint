@@ -1,1 +1,1 @@
-# system-design-blueprint
+# The system design blueprint
