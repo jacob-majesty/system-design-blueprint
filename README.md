@@ -12,6 +12,10 @@ This blueprint outlines a step-by-step approach to designing robust, scalable, a
 **REQUIREMENTS → CORE ENTITIES → API DESIGN → DATA FLOW → HIGH LEVEL DESIGN → DEEP DIVES**
 
 ---
+<img width="1323" height="561" alt="image" src="https://github.com/user-attachments/assets/105e9047-59c3-4e60-97de-5006029f9990" />
+
+
+---
 
 ## 1. Understand the Problem & Establish Design Scope
 
