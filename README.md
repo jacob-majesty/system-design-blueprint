@@ -150,6 +150,47 @@ Ensure clarity and alignment with original goals.
   - Practice real-world design scenarios consistently.
 
 ---
+# Efficient Development Strategies
+
+## 1. Ruthless Prioritization (The MVP Mindset)
+Ask yourself: **"What is the absolute minimum needed to make this functional?"**
+
+**Example:** If building a chat app, focus on sending/receiving messages first (no read receipts, no fancy UI).
+
+- **Cut scope aggressively:** If a feature isn't core to the MVP, table it for "Phase 2."
+- **Use the MoSCoW Method:**
+  - **Must have** (core functionality)
+  - **Should have** (important but not critical)
+  - **Could have** (nice-to-have)
+  - **Won't have** (discard for now)
+
+---
+
+## 2. Timebox Everything
+Break tasks into **15-30 min chunks** and set a timer.  
+
+**Example:**  
+- **15 mins:** Research how to implement authentication.  
+- **30 mins:** Build a basic login flow.  
+- **15 mins:** Test edge cases.  
+
+**Rule:** If stuck after **20-30 mins**, document what you tried and move on (see *"When to Ask for Help"* below).
+
+---
+
+## 3. How to Be Quick in Unknown Territory
+- **Start with pseudocode or diagrams** before writing real code.  
+  - *Example:* Sketch a flowchart for your logic.  
+
+- **Leverage existing resources:**  
+  - Copy-paste small, understood snippets from docs/Stack Overflow (don’t reinvent wheels).  
+  - Use libraries/frameworks for non-core tasks (e.g., Firebase for auth instead of building from scratch).  
+
+- **Spike risky unknowns early:**  
+  - Spend **30-60 mins max** prototyping the hardest part first (e.g., *"Can I even connect to this API?"*).  
+  - If it’s unfeasible, **pivot fast**.  
+
+---
 
 ## 📚 Resources
 
