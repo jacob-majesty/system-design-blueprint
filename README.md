@@ -7,6 +7,8 @@ This blueprint outlines a step-by-step approach to designing robust, scalable, a
 
 ---
 
+[**Resources**](https://drive.google.com/drive/folders/1FDTV9qTw32VKZGK7pI4iGdNJXrXmzpPV)
+
 ## 📌 Design Flow Overview
 
 **REQUIREMENTS → CORE ENTITIES → API DESIGN → DATA FLOW → HIGH LEVEL DESIGN → DEEP DIVES**
