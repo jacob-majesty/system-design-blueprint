@@ -3,9 +3,17 @@
 > System design is a blend of analytical thinking, knowledge, and effective communication.  
 > It's an iterative process, and everything involves trade-offs.
 
-This blueprint outlines a step-by-step approach to designing robust, scalable, and maintainable systems.
+> Check the [**BLUEPRINT**](https://github.com/jacob-majesty/system-design-blueprint/blob/main/BLUEPRINT.md) for software architecture and implementation
+
 
 ---
+```mermaid
+graph LR
+A[Scope] --> B[Risk] --> C[Architecture] --> D[Contracts] --> E[Detailed Design] --> F[Code] --> G[Testing] --> H[Deploy] --> I[Monitor] --> J[Iterate]
+````
+
+---
+This blueprint outlines a step-by-step approach to designing robust, scalable, and maintainable systems.
 
 [**Resources**](https://drive.google.com/drive/folders/1FDTV9qTw32VKZGK7pI4iGdNJXrXmzpPV)
 
