@@ -2,6 +2,14 @@
 **Senior Software Engineer** | Value-Driven System Designer  
 *Transforming complex requirements into scalable, maintainable solutions*  
 
+````mermaid
+graph LR
+    A[Business Goals] --> B((Senior Engineer))
+    C[User Pain Points] --> B
+    D[Team Capabilities] --> B
+    B --> E[Technical Solution]
+````
+
 ---
 
 ## 🎯 Value Proposition  
