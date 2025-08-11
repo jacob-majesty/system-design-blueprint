@@ -5,11 +5,21 @@
 
 > Check the [**BLUEPRINT**](https://github.com/jacob-majesty/system-design-blueprint/blob/main/BLUEPRINT.md) for software architecture and implementation
 
-
+> Senior Software Engineer [**RESUME**](https://github.com/jacob-majesty/system-design-blueprint/blob/main/SSE_RESUME.md): Value-Driven Profile (Emphasizing impact over tenure - based on your insights)
+ - Seniority isn't measured in years but in crises prevented and capabilities enabled
+ - Values: Your risk prevention work, How you simplified complexity, Mentorship impact
 ---
+
 ```mermaid
 graph LR
 A[Scope] --> B[Risk] --> C[Architecture] --> D[Contracts] --> E[Detailed Design] --> F[Code] --> G[Testing] --> H[Deploy] --> I[Monitor] --> J[Iterate]
+````
+
+```mermaid
+graph LR
+A[OpenAPI] --> B[DB Schema];
+A --> C[Event Contracts];
+B --> D[Service Interfaces];
 ````
 
 ---
