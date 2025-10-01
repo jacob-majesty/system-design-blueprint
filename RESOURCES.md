@@ -1,0 +1,2 @@
+- **AWS Books:** https://github.com/manjunath5496/AWS-Books
+- **Software architecture (Intro):** https://github.com/faraday-academy/intro-to-software-architecture 
