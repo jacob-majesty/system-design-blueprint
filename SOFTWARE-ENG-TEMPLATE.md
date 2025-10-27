@@ -113,6 +113,7 @@ project-root/
 ├── scripts/                       # Local automation (git hooks, deployment, testing)
 │   ├── git-hooks/                 # Pre-commit, pre-push enforcement
 │   └── deployment/                # Rollback and health check scripts
+├── frontend/                      # Frontend 
 ├── tests/                         # Dedicated folder for E2E and UAT (Selenium)
 ├── config/                        # Centralized application property files
 ├── pom.xml (Parent Maven)         # Defines dependencies and global plugin versions
