@@ -1,8 +1,20 @@
 # ⚙️ Senior Software Engineer Code Review Checklist
 
-This checklist is organized by key focus areas to ensure comprehensive review coverage, balancing correctness, design, and efficiency.
+##  Key Senior Review Focus Areas
+
+As a senior engineer, your review should prioritize issues that **automated tools cannot find** or that have a **disproportionately large impact** on the system's long-term health and stability. These areas are **mandatory** checks before merging.
+
+| Focus Area | Description | Priority | Checklist Reference |
+| :--- | :--- | :--- | :--- |
+| **Architectural Drift** | Does this change introduce a new, non-standard pattern, or violate the system's core design principles? Does it unnecessarily couple components? | P1/P2 | Section 3 |
+| **Security Integrity** | Is the code vulnerable to common attacks (e.g., injection, cross-site scripting, insecure handling of sensitive data)? Is user input trusted? | **P1 (Critical)** | Section 1 |
+| **Performance Regression**| Could this change lead to significant slowdowns, resource exhaustion, or increased infrastructure cost (e.g., N+1 queries, high-complexity loops, memory leaks)? | P1/P2 | Section 4 |
+| **Non-Obvious Correctness**| Are **all** edge cases, concurrency issues, and complex failure scenarios handled properly? Does the code work under load or in distributed environments? | **P1 (Critical)** | Section 1 |
+| **Test Quality & Intent** | Do the tests cover the *intent* of the feature? Are the tests brittle, slow, or testing implementation details rather than behavior? (Not just *if* tests exist, but *how well* they exist). | P2 | Section 2 |
+| **Technical Debt Burden** | Is the solution the simplest one? Does it introduce temporary fixes that will become permanent maintenance headaches later? | P2 | Section 3, 5 |
 
 ---
+This checklist is organized by key focus areas to ensure comprehensive review coverage, balancing correctness, design, and efficiency.
 
 ## 1. 🎯 Functional Correctness & Integrity
 
