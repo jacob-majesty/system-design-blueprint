@@ -1,6 +1,43 @@
 # ⚙️ Senior Software Engineer Code Review Checklist
 
 ##  Key Senior Review Focus Areas
+---
+# Senior Code Review Summary: High-Leverage Focus
+
+This section outlines the most important aspects of a senior code review, emphasizing systems-level thinking and mentorship.
+
+---
+
+## 1. 🔑 P1 & P2: The Mandatory Review Focus
+
+The primary goal is to act as a **gatekeeper** against issues that automated tools miss. Prioritize your time on these critical areas:
+
+* **Architectural Drift:** Ensure the change aligns with the system's long-term design. **Avoid** introducing new, unnecessary patterns or tight coupling.
+* **Security Integrity:** **Absolutely block** any merge request that introduces potential security vulnerabilities (e.g., injection, insecure defaults).
+* **Non-Obvious Correctness:** Verify complex logic, concurrency handling, and that all **edge cases** and failure scenarios are properly accounted for.
+* **Performance Regression:** Quickly identify high-impact performance flaws, especially inefficient database access (N+1 queries) or $O(n^2)$ complexity.
+* **Test Quality:** Check that tests are not only present but are **high-quality, deterministic,** and cover the intended *behavior* of the change.
+
+---
+
+## 2. 🗣️ Communication & Mentorship
+
+As a senior engineer, your role is to teach, not just criticize.
+
+* **Explain the *Why***: For every mandatory change, clearly explain the **principle, risk, or technical debt** that necessitates the fix.
+* **Be Constructive:** Maintain a positive, objective tone. Frame feedback as suggestions for improvement rather than personal criticism.
+* **Actionability:** Clearly label comments as **[Blocking]** (P1/P2 must-fix) or **[Suggestion]** (P3 nice-to-have/nit) to guide the author.
+* **Be Efficient:** For complex or lengthy debates, move the discussion offline immediately (e.g., "Let's schedule a 5-minute sync") rather than engaging in long comment threads.
+
+---
+
+## 3. 🧠 Mastery Requires Practice
+
+Exceling at code review is a skill requiring continuous development:
+
+* **Practice Predictive Thinking:** Consistently ask: "What breaks if this is merged?" and "How does this scale?"
+* **Practice Prioritization:** Develop the ability to quickly triage issues to ensure the team's development pipeline moves quickly and is not blocked over minor stylistic concerns.
+---
 
 As a senior engineer, your review should prioritize issues that **automated tools cannot find** or that have a **disproportionately large impact** on the system's long-term health and stability. These areas are **mandatory** checks before merging.
 
