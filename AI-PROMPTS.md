@@ -142,6 +142,143 @@ Use these strategies to get more tailored and actionable results from the AI.
 | **Living Documentation Update** | Update relevant sections based on code changes. **Highlight breaking changes or new features**. |
 | **Periodic Review** | Suggest sections to add/expand, identify outdated/irrelevant parts, and recommend improvements for clarity. |
 
+### Details:
+### Blueprint Prompt
+
+I need to create documentation for `[project/component name]`. Please generate:
+
+1.  An overview of the `[project/component]`
+2.  Installation instructions
+3.  Configuration options
+4.  API reference (if applicable)
+5.  Usage examples
+6.  Troubleshooting guide
+7.  FAQ section
+
+For each section, consider:
+* The target audience (e.g., developers, end-users)
+* Any prerequisites or dependencies
+* Common pitfalls or misconceptions
+* Best practices
+
+Please use clear, concise language and include relevant code snippets where appropriate.
+
+### Refining Specific Sections Prompt
+
+```markdown
+Please review and improve the following documentation section:
+[Paste section here]
+
+Consider:
+1. Clarity of explanation
+2. Completeness of information
+3. Appropriate level of detail for the target audience
+4. Consistency with best practices in technical writing
+
+Suggest improvements and explain your reasoning.
+````
+
+### For API Documentation
+
+  * **Prompt Template:**
+    ```markdown
+    Generate API documentation for the following endpoint:
+    [Paste endpoint details]
+    Include:
+    1. Endpoint URL and method
+    2. Request parameters and their types
+    3. Request body format (if applicable)
+    4. Response format and possible status codes
+    5. Example request and response
+    6. Any authentication requirements
+    7. Rate limiting information (if applicable)
+    ```
+
+### For a README File
+
+  * **Prompt Template:**
+    ```markdown
+    Create a README.md file for my GitHub repository. The project is [brief description]. Include:
+    1. Project title and description
+    2. Installation instructions
+    3. Usage examples
+    4. Contributing guidelines
+    5. License information
+    6. Badges (e.g., build status, version, etc.)
+
+    Use proper Markdown formatting and consider adding a table of contents for easier navigation.
+    ```
+
+### For User Guides
+
+  * **Prompt Template:**
+    ```markdown
+    Generate a user guide for [product/feature name]. The target audience is [describe audience]. Include:
+    1. Introduction and purpose of the product/feature
+    2. Getting started guide
+    3. Main features and how to use them
+    4. Advanced usage tips
+    5. Troubleshooting common issues
+
+    Use simple language and consider including step-by-step instructions with hypothetical screenshots placeholders.
+    ```
+
+### For Code Comments and Docstrings
+
+  * **Prompt Template:**
+    ```markdown
+    Generate appropriate comments and docstrings for the following code:
+    [Paste code here]
+    Follow [language-specific] conventions for docstrings. Include:
+    1. Brief description of the function/class
+    2. Parameters and their types
+    3. Return value and type
+    4. Any exceptions that might be raised
+    5. Usage examples if the function/class usage is not immediately obvious
+    ```
+
+### Leveraging AI for Living Documentation (Update Based on Changes)
+
+  * **Prompt Template:**
+    ```markdown
+    I've made the following changes to my code:
+    [Summarize changes]
+    Please update the relevant sections of the documentation to reflect these changes. 
+    Highlight any breaking changes or new features that users should be aware of.
+    ```
+
+### Periodic Review
+
+  * **Prompt Template:**
+    ```markdown
+    Please review the following documentation:
+    [Paste current docs]
+    Considering the latest best practices and common user pain points in similar projects:
+    1. Suggest any sections that should be added or expanded
+    2. Identify any parts that might be outdated or no longer relevant
+    3. Recommend improvements for clarity and user-friendliness
+    ```
+
+-----
+
+## 6\. Testing, Debugging, and Quality Assurance (QA)
+
+### 6.1. AI-Assisted Debugging
+
+  * **Debugging Prompt:** Describe the bug/error, paste relevant code.
+  * **AI Output Request:** 1. Analyze code and suggest potential causes. 2. Provide step-by-step debugging strategies. 3. Suggest tools/techniques. 4. Propose fixes and explain reasoning. 5. Mention best practices/common pitfalls.
+  * **Code Review (Continuous Improvement):** Review for: Code style, Potential bugs/edge cases, Performance, Security, and Readability/Maintainability.
+
+### 6.2. Test Generation & Planning
+
+| Type of Test | Coverage Requirements |
+| :--- | :--- |
+| **Unit Tests** | Happy path scenarios, Edge cases, Error conditions, and Boundary value analysis. Include: Description of check, Actual test code (using `[framework]`), and necessary mock objects or fixtures. |
+| **Integration Tests** | Main interaction scenarios, Proper error handling and edge cases, and necessary setup/teardown procedures. |
+| **Performance Test Plan** | Key performance indicators, Test scenarios, Tools/frameworks, Strategies for bottleneck identification, and Interpretation best practices. |
+| **Security Testing** | Review for common issues (Injection flaws, Broken authentication, Sensitive data exposure, XSS, etc.). For each vulnerability, explain the risk and suggest secure coding practices. |
+| **Test Data Generation** | Appropriate value ranges, SQL/Script to generate diverse data (Normal, Edge, Invalid), **Ensure referential integrity**, and cover crucial scenarios. |
+
 -----
 
 ## 6\. Testing, Debugging, and Quality Assurance (QA)
