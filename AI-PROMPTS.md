@@ -8,24 +8,31 @@ The effectiveness of this partnership hinges on **The Power of Effective Prompts
 
 ## 🧭 Table of Contents
 
-1.  [Software Development Cycle (SDLC)](https://www.google.com/search?q=%231-software-development-cycle-sdlc)
-      * [1.1. AI's Role in SDLC](https://www.google.com/search?q=%2311-ais-role-in-sdlc)
-2.  [Core Development Criteria and Principles](https://www.google.com/search?q=%232-core-development-criteria-and-principles)
-      * [2.1. Code Explanation](https://www.google.com/search?q=%2321-code-explanation)
-      * [2.2. Architecture & Design](https://www.google.com/search?q=%2322-architecture--design)
-3.  [Implementation and Coding Prompts](https://www.google.com/search?q=%233-implementation-and-coding-prompts)
-      * [3.1. General Implementation](https://www.google.com/search?q=%2331-general-implementation)
-      * [3.2. Database Design & Optimization](https://www.google.com/search?q=%2332-database-design--optimization)
-      * [3.3. Query Optimization and Troubleshooting](https://www.google.com/search?q=%2333-query-optimization-and-troubleshooting)
-4.  [Advanced Prompting Strategies](https://www.google.com/search?q=%234-advanced-prompting-strategies)
-5.  [Documentation Generation](https://www.google.com/search?q=%235-documentation-generation)
-6.  [Testing, Debugging, and Quality Assurance (QA)](https://www.google.com/search?q=%236-testing-debugging-and-quality-assurance-qa)
-      * [6.1. AI-Assisted Debugging](https://www.google.com/search?q=%2361-ai-assisted-debugging)
-      * [6.2. Test Generation & Planning](https://www.google.com/search?q=%2362-test-generation--planning)
-7.  [Security and Performance Optimization](https://www.google.com/search?q=%237-security-and-performance-optimization)
-      * [7.1. Code Security Enhancement](https://www.google.com/search?q=%2371-code-security-enhancement)
-      * [7.2. Performance Optimization](https://www.google.com/search?q=%2372-performance-optimization)
-8.  [Version Control and Collaboration](https://www.google.com/search?q=%238-version-control-and-collaboration)
+1. [Software Development Cycle (SDLC)](#1-software-development-cycle-sdlc)
+   - [1.1. AI's Role in SDLC](#11-ais-role-in-sdlc)
+
+2. [Core Development Criteria and Principles](#2-core-development-criteria-and-principles)
+   - [2.1. Code Review and Explanation](#21-code-review-and-explanation)
+   - [2.2. Architecture--design](#22-architecture--design)
+
+3. [Implementation and Coding Prompts](#3-implementation-and-coding-prompts)
+   - [3.1. General Implementation](#31-general-implementation)
+   - [3.2. Database Design & Optimization](#32-database-design--optimization)
+   - [3.3. Query Optimization and Troubleshooting](#33-query-optimization-and-troubleshooting)
+
+4. [Advanced Prompting Strategies](#4-advanced-prompting-strategies)
+
+5. [Documentation Generation](#5-documentation-generation)
+
+6. [Testing, Debugging, and Quality Assurance (QA)](#6-testing-debugging-and-quality-assurance-qa)
+   - [6.1. AI-Assisted Debugging](#61-ai-assisted-debugging)
+   - [6.2. Test Generation & Planning](#62-test-generation--planning)
+
+7. [Security and Performance Optimization](#7-security-and-performance-optimization)
+   - [7.1. Code Security Enhancement](#71-code-security-enhancement)
+   - [7.2. Performance Optimization](#72-performance-optimization)
+
+8. [Version Control and Collaboration](#8-version-control-and-collaboration)
 
 -----
 
