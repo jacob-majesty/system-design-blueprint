@@ -77,7 +77,7 @@ These criteria ensure AI-generated content adheres to high standards of software
   * **Focus:** Communication and simplicity.
   * **Key Deliverables:** Tradeoffs and decisions (both positive and negative), Architecture Decision Record (ADR), and Design patterns.
   * **Visual Diagram:** Request a UML, Flowchart, Class, Sequence, or Entity-Relationship Diagram.
-  * **Other Elements:** TEST: UNIT TEST, CODE REVIEW, DOCUMENTATION: Resume of MR & Technical detail of implementation with explanation.
+  * **Other Elements:** Tests: Unit test, Code review, Documentation: Resume of MR/PR & Technical detail of implementation with explanation.
 
 -----
 
@@ -91,6 +91,98 @@ These criteria ensure AI-generated content adheres to high standards of software
 | **Creating a Class/Module** | 1. Constructor/initialization. 2. Main methods with clear docstrings. 3. Necessary private helper methods. 4. Proper encapsulation and adherence to OOP principles. |
 | **Optimizing Existing Code** | Suggest optimizations. For each suggestion, explain the expected improvement and any trade-offs. |
 | **Writing Unit Tests** | Include tests for: 1. Normal expected inputs. 2. Edge cases. 3. Invalid inputs. Use `[preferred testing framework]` syntax. |
+
+### Details:
+### For implementing a specific algorithm
+
+* **Prompt Template:**
+    ```markdown
+    Implement a [name of algorithm] in [programming language]. 
+    Please include: 
+    1. The main function with clear parameter and return types 
+    2. Helper functions if necessary 
+    3. Time and space complexity analysis 
+    4. Example usage
+    ```
+
+### For creating a class or module
+
+* **Prompt Template:**
+    ```markdown
+    Create a [class/module] for [specific functionality] in [programming language].
+    Include:
+    1. Constructor/initialization
+    2. Main methods with clear docstrings
+    3. Any necessary private helper methods
+    4. Proper encapsulation and adherence to OOP principles
+    ```
+
+---
+
+## Advanced Prompting Strategies
+
+### Q&A Strategy
+
+* **Goal:** This exchange helps the AI understand exactly what you need before providing code or architecture recommendations, resulting in a more useful solution.
+* **Example:**
+    ```markdown
+    “I need to build a user authentication system for my web application. Before providing a solution, please ask me relevant questions about my specific requirements and constraints so you can give me the most appropriate implementation advice.”
+    ```
+
+### Pros and Cons Strategy
+
+* **Goal:** This structured comparison helps you weigh important factors for your specific use case rather than getting a generic recommendation.
+* **Example:**
+    ```markdown
+    “I’m developing a product catalog application that needs to store product information, images, and customer reviews. Please analyze the pros and cons of using MongoDB, PostgreSQL, and Firebase for this application. Consider factors like scalability, query capabilities, ease of development, and maintenance requirements.”
+    ```
+
+### Stepwise Chain of Thought Strategy
+
+* **Goal:** Maintain control and can guide the refactoring process at each stage.
+* **Example (Step 1 - Initial Prompt):**
+    ```markdown
+    Step 1: “Help me refactor the code in service.js. Go one step at a time. Do not move to the next step until I give the keyword ‘next’.”
+    ```
+* **Example (Step 2 - AI Response/User Action):**
+    ```markdown
+    Step 2: Separate concerns into logical modules. Let’s start by grouping related functions. I recommend splitting this file into three separate modules:
+    userService.js — For user-related operations
+    productService.js — For product-related operations
+    utilService.js — For shared utility functions
+    ```
+
+### Role Prompt Strategy
+
+* **Goal:** By specifying the role, you get feedback that prioritizes professional considerations that might be overlooked by a more general code review.
+* **Example:**
+    ```markdown
+    “Act as a senior security engineer with 10 years of experience in web application security. Review the following authentication code for my React application and identify any security vulnerabilities, potential edge cases, or implementation flaws. Be particularly attentive to common OWASP security risks.”
+    ```
+
+### Advanced Prompting: Combined Strategies
+
+* **[Role + Q&A Strategy]**
+    * **Example:**
+        ```markdown
+        “Act as a DevOps engineer with expertise in Kubernetes. I need help setting up a CI/CD pipeline for our microservices architecture. Before providing a solution, please ask me questions about our current infrastructure, team capabilities, and specific requirements to ensure your guidance is tailored to our situation.”
+        ```
+* **[Stepwise + Pros and Cons Strategy]**
+    * **Example:**
+        ```markdown
+        “I need to migrate our application from a monolithic architecture to microservices. Let’s approach this one step at a time, and for each step, I’d like you to present multiple approaches with their pros and cons. First, help me identify which components should be separated into microservices. Don’t proceed to the next step until I type ‘next’.”
+        ```
+* **[Role + Stepwise Strategy]**
+    * **Example:**
+        ```markdown
+        “Act as a senior database architect. I need to optimize our PostgreSQL database that’s experiencing performance issues with our e-commerce application. Walk me through the optimization process step by step, explaining your reasoning at each stage. Wait for my confirmation before moving to the next step.”
+        ```
+* **[Q&A + Pros and Cons + Stepwise Strategy]**
+    * **Example:**
+        ```markdown
+        “I’m designing a real-time data processing system for IoT devices. First, please ask me clarifying questions about our requirements and constraints. Then, present the pros and cons of different architectural approaches (Kafka vs. RabbitMQ, serverless vs. container-based, etc.). Finally, once we’ve settled on an approach, guide me through the implementation step by step, waiting for my confirmation at each stage.”
+        ```
+---
 
 ### 3.2. Database Design & Optimization
 
