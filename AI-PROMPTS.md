@@ -195,3 +195,10 @@ Use these strategies to get more tailored and actionable results from the AI.
 
 -----
 
+## 9. Sources
+
+* **4 Must-Know AI Prompt Strategies for Developers**
+  [Link to Article](https://reykario.medium.com/4-must-know-ai-prompt-strategies-for-developers-0572e85a0730)
+* **AI-Assisted Software Development: A Comprehensive Guide with Practical Prompts (Part 1-3)**
+  [Link to Article](https://aalapdavjekar.medium.com/ai-assisted-software-development-a-comprehensive-guide-with-practical-prompts-part-1-3-989a529908e0)
+  
