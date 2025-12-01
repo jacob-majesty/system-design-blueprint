@@ -390,6 +390,160 @@ Suggest improvements and explain your reasoning.
   * **Resource-Intensive Operations Prompt:** Suggest optimization focusing on: Time complexity, Memory usage, Caching/Memoization, and Parallel processing.
   * **Staying Updated:** Request an update on the latest best practices for `[language/framework]` focusing on: Security enhancements, Performance optimization, New language features, and Deprecated practices.
 
+### Details:
+### For Security Testing
+
+* **Prompt Template:**
+    ```markdown
+    Please review the following code for potential security vulnerabilities:
+    [Paste your code]
+
+    Consider common security issues such as:
+    1. Injection flaws
+    2. Broken authentication
+    3. Sensitive data exposure
+    4. XML external entities (XXE)
+    5. Broken access control
+    6. Security misconfigurations
+    7. Cross-site scripting (XSS)
+
+    For each vulnerability found, explain the risk and suggest secure coding practices to mitigate it.
+    ```
+
+### Using AI for Test Data Generation
+
+* **Prompt Template:**
+    ```markdown
+    I need to generate test data for the following database schema:
+    [Paste your schema here]
+
+    Please help me create a test data generation plan:
+    1. Suggest appropriate ranges or types of values for each field
+    2. Provide SQL or script to generate a diverse set of test data, including:
+        - Normal cases
+        - Edge cases
+        - Invalid data to test error handling
+    3. Ensure referential integrity is maintained for related tables
+    4. Include any specific scenarios or data patterns crucial for thorough testing
+
+    The test data should be comprehensive enough to cover various testing scenarios while remaining manageable in size.
+    ```
+
+### Security Best Practices and Code Optimization with AI
+
+### Enhance Code Security
+* **Prompt Template:**
+    ```markdown
+    Please perform a security audit on the following code:
+    [Paste your code here]
+
+    In your audit, please:
+    1. Identify any potential security vulnerabilities, including but not limited to:
+        - Injection flaws (SQL, NoSQL, OS command injection, etc.)
+        - Broken authentication
+        - Sensitive data exposure
+        - XML External Entities (XXE)
+        - Broken access control
+        - Security misconfigurations
+        - Cross-Site Scripting (XSS)
+        - Insecure deserialization
+        - Using components with known vulnerabilities
+        - Insufficient logging & monitoring
+    2. For each vulnerability found:
+        - Explain the potential impact
+        - Suggest a fix or mitigation strategy
+        - Provide a code snippet demonstrating the fix, if applicable
+    3. Suggest any general security improvements or best practices that could be applied to this code.
+    4. Recommend any security-related libraries or tools that could help improve the overall security posture of the application.
+
+    This comprehensive prompt usually gives me a solid starting point for hardening my application’s security.
+    ```
+
+#### Optimizing Performance with AI Suggestions
+
+* **Prompt Template:**
+    ```markdown
+    Please analyze the following code for performance optimization opportunities:
+    [Paste your code here]
+
+    In your analysis, please:
+    1. Identify any performance bottlenecks or inefficient operations
+    2. Suggest optimizations, considering:
+        - Time complexity improvements
+        - Memory usage optimization
+        - Reduction of unnecessary operations or function calls
+        - Potential for parallelization or asynchronous operations
+        - Caching strategies
+    3. For each suggestion:
+        - Explain the expected performance impact
+        - Provide a code snippet demonstrating the optimization
+        - Discuss any potential trade-offs (e.g., readability, maintainability)
+    4. Recommend any language-specific performance best practices or libraries that could be beneficial
+    5. Suggest any profiling tools or techniques that could help further analyze the performance in a real-world scenario
+    ```
+
+#### Staying Updated on Best Practices
+
+* **Prompt Template:**
+    ```markdown
+    Please provide an update on the latest best practices for [your language/framework] as of [current date], focusing on:
+    1. Security enhancements and newly discovered vulnerabilities
+    2. Performance optimization techniques
+    3. New language features or libraries that could improve security or performance
+    4. Any deprecated practices that should be avoided
+
+    For each point, please explain:
+    - What the practice or vulnerability is
+    - Why it's important
+    - How to implement or mitigate it in practical terms
+    ```
+
+### Prompt Ideas for Security and Optimization Tasks
+
+#### For analyzing potential SQL injection vulnerabilities
+
+* **Prompt Template:**
+    ```markdown
+    Please review the following database interaction code for potential SQL injection vulnerabilities:
+    [Paste your database interaction code]
+
+    For each vulnerability found:
+    1. Explain how it could be exploited
+    2. Provide a secure alternative implementation
+    3. Suggest any relevant security libraries or techniques specific to our database system
+    ```
+
+#### For optimizing resource-intensive operations
+
+* **Prompt Template:**
+    ```markdown
+    The following function is causing performance issues in our application:
+    [Paste your function]
+
+    Please suggest ways to optimize this function, considering:
+    1. Time complexity improvements
+    2. Memory usage optimization
+    3. Potential for caching or memoization
+    4. Opportunities for parallel processing, if applicable
+
+    For each suggestion, provide a brief explanation of the expected performance gain and any potential trade-offs.
+    ```
+
+#### For improving front-end security
+
+* **Prompt Template:**
+    ```markdown
+    Please review the following front-end code for security best practices:
+    [Paste your front-end code]
+
+    Consider aspects such as:
+    1. Cross-Site Scripting (XSS) prevention
+    2. Secure handling of sensitive data
+    3. Protection against Cross-Site Request Forgery (CSRF)
+    4. Secure communication with back-end APIs
+
+    Provide specific recommendations for improving the security of this code, including any relevant libraries or techniques for our front-end framework.
+    ```
 -----
 
 ## 8\. Version Control and Collaboration
