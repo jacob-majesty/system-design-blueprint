@@ -8,7 +8,7 @@ The effectiveness of this partnership hinges on **The Power of Effective Prompts
 
 ## 🧭 Table of Contents
 
-1. [Software Development Cycle (SDLC)](#1-software-development-cycle-sdlc)
+1. [Software Development Life Cycle (SDLC)](#1-software-development-life-cycle-sdlc)
    - [1.1. AI's Role in SDLC](#11-ais-role-in-sdlc)
 
 2. [Core Development Criteria and Principles](#2-core-development-criteria-and-principles)
