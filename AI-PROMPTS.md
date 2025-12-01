@@ -279,6 +279,99 @@ Suggest improvements and explain your reasoning.
 | **Security Testing** | Review for common issues (Injection flaws, Broken authentication, Sensitive data exposure, XSS, etc.). For each vulnerability, explain the risk and suggest secure coding practices. |
 | **Test Data Generation** | Appropriate value ranges, SQL/Script to generate diverse data (Normal, Edge, Invalid), **Ensure referential integrity**, and cover crucial scenarios. |
 
+### Details:
+### Unit Tests
+
+* **Prompt Template:**
+    ```markdown
+    I need unit tests for the following function:
+    [Paste your function here]
+
+    Please generate a comprehensive set of unit tests that cover:
+    1. Happy path scenarios
+    2. Edge cases
+    3. Error conditions
+    4. Boundary value analysis
+
+    For each test case, please:
+    1. Provide a brief description of what the test is checking
+    2. Write the actual test code using [preferred testing framework, e.g., pytest]
+    3. Explain any mock objects or fixtures that might be needed
+
+    Also, suggest any additional tests that might be relevant based on common pitfalls or best practices for this type of function.
+    ```
+
+### AI-Assisted Debugging Techniques
+
+* **Prompt Template:**
+    ```markdown
+    I'm encountering the following bug:
+    [Describe the bug, including any error messages and the steps to reproduce]
+
+    Here's the relevant code:
+    [Paste the code related to the bug]
+
+    Please help me debug this issue:
+    1. Analyze the code and suggest potential causes of the bug
+    2. Provide step-by-step debugging strategies I can follow
+    3. Suggest any tools or techniques that might be helpful in diagnosing the issue
+    4. If possible, propose potential fixes and explain their reasoning
+
+    Additionally, are there any best practices or common pitfalls related to this type of issue that I should be aware of for future reference?
+    ```
+
+### Continuous Improvement through AI Code Reviews
+
+* **Prompt Template:**
+    ```markdown
+    Please review the following code for quality and potential issues:
+    [Paste your code here]
+
+    In your review, please consider:
+    1. Code style and adherence to best practices
+    2. Potential bugs or edge cases not handled
+    3. Performance optimizations
+    4. Security vulnerabilities
+    5. Readability and maintainability
+
+    For each issue found, please:
+    1. Explain the problem
+    2. Suggest a fix
+    3. Provide a brief rationale for the suggested change
+
+    Additionally, are there any overall improvements or refactoring suggestions you would make for this code?
+    ```
+
+### For Generating Integration Tests
+
+* **Prompt Template:**
+    ```markdown
+    I need to create integration tests for the following components:
+    [List components and their interactions]
+
+    Please suggest a set of integration tests that:
+    1. Cover the main interaction scenarios between these components
+    2. Test for proper error handling and edge cases
+    3. Include any necessary setup and teardown procedures
+
+    Provide the test scenarios in a clear, step-by-step format, and include any necessary mock objects or test data.
+    ```
+
+### For Performance Testing
+
+* **Prompt Template:**
+    ```markdown
+    I need to create a performance test plan for my application. The key areas of concern are:
+    [List main functionalities or components to be tested]
+
+    Please help me create a performance test plan that includes:
+    1. Key performance indicators to measure
+    2. Test scenarios to simulate various load conditions
+    3. Suggestions for tools or frameworks to use
+    4. Strategies for identifying performance bottlenecks
+    5. Best practices for interpreting and acting on the results
+    ```
+
 -----
 
 ## 7\. Security and Performance Optimization
