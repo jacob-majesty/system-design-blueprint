@@ -281,26 +281,6 @@ Suggest improvements and explain your reasoning.
 
 -----
 
-## 6\. Testing, Debugging, and Quality Assurance (QA)
-
-### 6.1. AI-Assisted Debugging
-
-  * **Debugging Prompt:** Describe the bug/error, paste relevant code.
-  * **AI Output Request:** 1. Analyze code and suggest potential causes. 2. Provide step-by-step debugging strategies. 3. Suggest tools/techniques. 4. Propose fixes and explain reasoning. 5. Mention best practices/common pitfalls.
-  * **Code Review (Continuous Improvement):** Review for: Code style, Potential bugs/edge cases, Performance, Security, and Readability/Maintainability.
-
-### 6.2. Test Generation & Planning
-
-| Type of Test | Coverage Requirements |
-| :--- | :--- |
-| **Unit Tests** | Happy path, Edge cases, Error conditions, and Boundary value analysis. Include: Description of check, Actual test code (using `[framework]`), and necessary mock objects. |
-| **Integration Tests** | Main interaction scenarios, Proper error handling, Edge cases, and necessary setup/teardown. |
-| **Performance Test Plan** | Key performance indicators (KPIs), Test scenarios (various load conditions), Tools/frameworks, Strategies for bottleneck identification, and Interpretation best practices. |
-| **Security Testing** | Review for common issues (Injection, Broken Auth/Access Control, XSS, etc.). For each vulnerability, explain the risk and suggest secure coding practices. |
-| **Test Data Generation** | Appropriate value ranges, SQL/Script to generate diverse data (Normal, Edge, Invalid), **Ensure referential integrity**, and cover crucial scenarios. |
-
------
-
 ## 7\. Security and Performance Optimization
 
 ### 7.1. Code Security Enhancement
