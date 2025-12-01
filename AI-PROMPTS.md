@@ -186,12 +186,96 @@ Use these strategies to get more tailored and actionable results from the AI.
 
 | Task | Key Requirements |
 | :--- | :--- |
-| **AI-Generated Commit Messages** | 1. Concise subject line (50 chars or less). 2. Detailed body (wrap at 72 chars). 3. Follow best practices. 4. Include relevant issue numbers. |
+| **Commit Messages** | 1. Concise subject line (50 chars or less). 2. Detailed body (wrap at 72 chars). 3. Follow best practices. 4. Include relevant issue numbers. 5.The commit message should be informative enough that team members can understand the changes without having to look at the code. |
 | **Resolving Merge Conflicts** | AI should: 1. Analyze both versions. 2. Suggest the best combination method. 3. Provide the resolved code. 4. Explain the reasoning. 5. Advise on side effects. |
 | **Enhancing Pull Request Reviews** | Identify issues/improvements, Check coding standards, Suggest needed tests, Point out documentation gaps, and Highlight security/performance concerns. |
 | **Creating a .gitignore** | Exclude common system/IDE files, ignore language-specific artifacts/dependencies, and **ensure no sensitive info is committed**. |
 | **Writing Release Notes** | Summarize key new features, list breaking changes/migration steps, mention bug fixes/performance improvements, and thank contributors. Tone should be professional but friendly. |
 | **Improving Branch Naming** | Suggest a strategy that clearly indicates work type (feature, bugfix, etc.), includes ticket numbers, and is concise/descriptive. |
+
+### Details:
+### Commit Messages
+
+* **Criteria for Informative Commit Messages:**
+    1.  Concise subject line (50 chars or less).
+    2.  Detailed body (wrap at 72 chars).
+    3.  Follow best practices (e.g., use imperative mood).
+    4.  Include relevant issue numbers (e.g., `[#123]`).
+    5.  The commit message should be informative enough that team members can understand the changes without having to look at the code.
+
+### Resolving Merge Conflicts with AI Assistance
+
+* **Prompt Template:**
+    ```
+    I'm facing the following merge conflict:
+    [Paste the conflicting code sections]
+
+    The feature I'm trying to merge aims to: [Briefly describe the feature's purpose]
+
+    Please help me resolve this conflict by:
+    1. Analyzing both versions of the code
+    2. Suggesting the best way to combine the changes
+    3. Providing a resolved version of the code
+    4. Explaining the reasoning behind the suggested resolution
+
+    Also, please advise if there are any potential issues or side effects I should be aware of after this merge.
+    ```
+
+### Enhancing Pull Request Reviews
+
+* **Prompt Template:**
+    ```
+    Please review the following pull request:
+    [Paste the PR diff or provide a summary of changes]
+
+    In your review, please:
+    1. Identify any potential issues or improvements in the code
+    2. Check for adherence to our project's coding standards and best practices
+    3. Suggest any tests that might be needed
+    4. Point out any parts of the code that might need more documentation
+    5. Highlight any security or performance concerns
+
+    For each point, provide a brief explanation and, if applicable, suggest how it could be addressed.
+    ```
+
+### Prompt Ideas for Version Control and Collaboration Tasks
+
+#### For creating a `.gitignore` file:
+* **Prompt Template:**
+    ```
+    I'm starting a new [language/framework] project. Please help me create a comprehensive .gitignore file that:
+    1. Excludes common system and IDE files
+    2. Ignores language-specific build artifacts and dependencies
+    3. Ensures no sensitive information (like API keys) is accidentally committed
+
+    Please provide explanations for any non-obvious entries.
+    ```
+
+#### For writing release notes:
+* **Prompt Template:**
+    ```
+    We're preparing to release version [X.Y.Z] of our software. Based on the following commit history since our last release:
+    [Paste relevant commit history]
+
+    Please help me draft release notes that:
+    1. Summarize key new features
+    2. List any breaking changes and migration steps
+    3. Mention bug fixes and performance improvements
+    4. Thank contributors (if applicable)
+
+    The tone should be professional but friendly, suitable for both technical and non-technical readers.
+    ```
+
+#### For improving branch naming conventions:
+* **Prompt Template:**
+    ```
+    Our team needs a consistent branch naming convention. Please suggest a branch naming strategy that:
+    1. Clearly indicates the type of work (e.g., feature, bugfix, hotfix)
+    2. Includes relevant ticket or issue numbers
+    3. Is concise but descriptive
+
+    Provide examples for different scenarios and explain the rationale behind the suggested convention.
+    ```
 
 -----
 
